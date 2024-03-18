@@ -1,0 +1,163 @@
+body {
+    overflow: scroll;
+    background-color: antiquewhite;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 0;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.logo{
+    width: 10vh;
+    height: 10vh;
+    padding-right: 3vh;
+    display: grid;
+    align-items: center;
+}
+
+.name{
+    width: 10vh;
+    height: 10vh;
+    padding-left: 1vh;
+    display: grid;
+    align-items: center;
+}
+
+.menu{
+    width: 10vh;
+    height: 10vh;
+    padding-left: 1vh;
+    display: grid;
+    align-items: center;
+}
+
+.cars{
+    width: 10vh;
+    height: 10vh;
+    padding-left: 1vh;
+    display: grid;
+    align-items: center;
+}
+
+.about{
+    width: 10vh;
+    height: 10vh;
+    padding-left: 1vh;
+    display: grid;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.section{
+    border: 1px solid blue;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.side-bar{
+    border: 1px solid black;
+    display: flex;
+    width: 10%;
+    height: 100vh;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    border: 1px solid green;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: red;
+    height: 20px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateX(30px);
+    background-color: red;
+    color: aqua;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: black;
+    color: black;
+    cursor: progress;
+}
+
+.btn-side{
+    width: 50%;
+    height: 5vh;
+    justify-content: center;
+}
+
+.Dropdown {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+ul {
+    list-style: none;
+    /* background: #22438C; */
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background-color: rgb(218, 217, 217);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: rgb(218, 217, 217);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
